@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Jessica Vega · Window to Lanterns</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&display=swap">
@@ -159,7 +160,7 @@ main section{margin-top:min(38vh,420px)}
 .edu .when{font-size:15px;color:var(--muted);white-space:nowrap;padding-top:2px}
 
 /* ---------- footer ---------- */
-footer{margin-top:min(44vh,480px)}
+footer#contact{margin-top:min(38vh,420px)}
 footer .panel{max-width:640px;display:grid;gap:20px}
 footer h2{font-size:clamp(34px,4.4vw,56px);line-height:1.02;max-width:14em}
 footer p{color:var(--muted);max-width:52ch;font-size:18px}
@@ -190,8 +191,8 @@ footer .colophon{font-size:14px;color:var(--muted);margin-top:16px;padding-top:2
     <ul>
       <li><a href="#work">Work</a></li>
       <li><a href="#roles">Looking for</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><button class="motion" id="motionBtn" type="button" data-state="playing">
         <svg class="on-pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="2" y="2" width="4" height="12" rx="1"/><rect x="10" y="2" width="4" height="12" rx="1"/></svg>
@@ -285,6 +286,19 @@ footer .colophon{font-size:14px;color:var(--muted);margin-top:16px;padding-top:2
   </div>
 </section>
 
+<section id="skills" class="sec panel">
+  <header>
+    <p class="label">Skills</p>
+    <h2>Toolbox</h2>
+  </header>
+  <div class="body skills">
+    <div><h3>Languages &amp; frameworks</h3><ul><li>Java</li><li>Groovy</li><li>Spring Boot</li><li>Spring MVC</li><li>JavaScript</li><li>React</li><li>GraphQL</li><li>jQuery</li><li>HTML5 / CSS3</li></ul></div>
+    <div><h3>Cloud &amp; AI</h3><ul><li>AWS (Developer – Associate, AI Practitioner)</li><li>Microservices Architecture</li><li>RESTful APIs</li><li>CI/CD · Jenkins</li><li>AI Engineering (M.S. focus)</li></ul></div>
+    <div><h3>Data &amp; quality</h3><ul><li>MongoDB</li><li>SQL</li><li>Hibernate</li><li>ActiveMQ</li><li>TDD · JUnit · Mockito</li><li>Maven · Git</li></ul></div>
+    <div><h3>Observability</h3><ul><li>Datadog</li><li>Kibana</li><li>GrayLog</li></ul></div>
+  </div>
+</section>
+
 <section id="experience" class="sec panel">
   <header>
     <p class="label">Experience</p>
@@ -342,19 +356,6 @@ footer .colophon{font-size:14px;color:var(--muted);margin-top:16px;padding-top:2
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="skills" class="sec panel">
-  <header>
-    <p class="label">Skills</p>
-    <h2>Toolbox</h2>
-  </header>
-  <div class="body skills">
-    <div><h3>Languages &amp; frameworks</h3><ul><li>Java</li><li>Groovy</li><li>Spring Boot</li><li>Spring MVC</li><li>JavaScript</li><li>React</li><li>GraphQL</li><li>jQuery</li><li>HTML5 / CSS3</li></ul></div>
-    <div><h3>Cloud &amp; AI</h3><ul><li>AWS (Developer – Associate, AI Practitioner)</li><li>Microservices Architecture</li><li>RESTful APIs</li><li>CI/CD · Jenkins</li><li>AI Engineering (M.S. focus)</li></ul></div>
-    <div><h3>Data &amp; quality</h3><ul><li>MongoDB</li><li>SQL</li><li>Hibernate</li><li>ActiveMQ</li><li>TDD · JUnit · Mockito</li><li>Maven · Git</li></ul></div>
-    <div><h3>Observability</h3><ul><li>Datadog</li><li>Kibana</li><li>GrayLog</li></ul></div>
   </div>
 </section>
 
@@ -1991,6 +1992,9 @@ void main(){
      from the nearest houses on the shore below the bluff right after. rel = scroll p at release. */
   var SPECIAL={};
   SPECIAL[LN_N-1]={ox:0.62,oy:0.15,oz:-2.6,v:34,rel:0.004,sc:1.25,near:true};
+  SPECIAL[LN_N-4]={ox:-0.5,oy:0.05,oz:-2.9,v:34,relB:3,sc:1.25,near:true}; // second window lantern: lifts off on the left of the window as the 'looking for' section ends
+  SPECIAL[LN_N-6]={ox:0.3,oy:0.0,oz:-1.4,v:22,rel:-0.04,sc:1.3,near:true}; // close-up lantern already drifting up in the window between the hero and Selected work
+  SPECIAL[LN_N-5]={ox:-0.3,oy:0.2,oz:-1.3,v:30,relB:4,sc:1.4,near:true}; // third window lantern: close up, a little left of centre, lifts off as Experience begins
   SPECIAL[LN_N-2]={ox:-17,oy:-142,oz:-624,v:620,rel:0.02,sc:2.2};
   SPECIAL[LN_N-3]={ox:72,oy:-141,oz:-699,v:560,rel:0.045,sc:2.2};
   for(var sk in SPECIAL){var sp=SPECIAL[sk];LANT.ox[sk]=sp.ox;LANT.oy[sk]=sp.oy;LANT.oz[sk]=sp.oz;LANT.v[sk]=sp.v;LANT.sc[sk]=sp.sc}
@@ -2013,12 +2017,12 @@ void main(){
       'void main(){float y=vUv.y;',
       ' float flick=1.0-uFlicker*0.2*(0.5+0.5*sin(uTime*11.0+vPh*7.0))*(0.5+0.5*sin(uTime*6.3+vPh*2.0));',
       ' float flame=exp(-pow((y-0.2)*3.4,2.0));float inner=0.3+0.7*flame*flick+0.22*(1.0-y)*flick;',
-      ' vec3 warm=mix(vec3(0.95,0.4,0.07),vec3(1.0,0.86,0.46),clamp(inner,0.0,1.0));',
+      ' vec3 warm=mix(vec3(1.0,0.66,0.12),vec3(1.0,0.94,0.52),clamp(inner,0.0,1.0));',
       ' float fiber=0.78+0.22*fbm(vec2(vUv.x*16.0+vSeed*40.0,y*7.0+vSeed*9.0));',
       ' float bands=smoothstep(0.0,0.07,y)*smoothstep(1.0,0.93,y);',
       ' vec3 N=normalize(vN);vec3 V=normalize(cameraPosition-vW);float fres=pow(1.0-abs(dot(N,V)),2.0);',
-      ' vec3 col=warm*fiber*inner*1.4;col=mix(col*0.4,col,bands);',
-      ' col=mix(col,col*0.5+vec3(0.1,0.03,0.0),fres*0.65);',
+      ' vec3 col=warm*fiber*inner*2.3;col=mix(col*0.5,col,bands);',
+      ' col=mix(col,col*0.6+vec3(0.16,0.09,0.0),fres*0.5);',
       ' float seam=smoothstep(0.02,0.0,abs(fract(vUv.x*5.0)-0.5)-0.48);col*=1.0-seam*0.3;',
       ' col*=0.35+0.65*vFade;',
       ' col=applyFog(col,length(vW-cameraPosition),vW.y);',
@@ -2047,7 +2051,7 @@ void main(){
       fragmentShader:'uniform vec3 uColor;varying float vA;void main(){'+softDisc+'gl_FragColor=vec4(uColor*a*vA,a*vA);}',
       transparent:true,depthWrite:false,depthTest:true,blending:THREE.AdditiveBlending});
   }
-  var haloMat=flameMat(0xf0a040,8,160,0.6,1,3.2), coreMat=flameMat(0xffe6b0,2.2,16,1,0,1.4);
+  var haloMat=flameMat(0xffc83c,11,200,1.0,1,5.5), coreMat=flameMat(0xfff2b4,3.0,22,1,0,2.6);
   var halo=new THREE.Points(flGeo,haloMat), core=new THREE.Points(flGeo,coreMat);
   halo.frustumCulled=false; core.frustumCulled=false; scene.add(halo); scene.add(core);
   // reflections: each flame is mirrored in the water plane and drawn where its reflected ray meets the lake
@@ -2059,14 +2063,14 @@ void main(){
       ' vec3 cp=cameraPosition;float s=(cp.y-uWater)/max(cp.y-M.y,0.001);vec3 P=cp+(M-cp)*s;',
       ' vec2 q=(vec2(-P.x,-P.z)*0.001-vec2(0.15,2.95))/vec2(2.1,1.8);q.y+=0.42*q.x*q.x;float inL=1.0-smoothstep(0.85,0.95,length(q));',
       ' float dM=length(M-cp);',FLICK,
-      ' vA=aAlpha*inL*0.55*fl*step(uWater+0.1,Wp.y)*step(uWater+0.2,cp.y);',
+      ' vA=aAlpha*inL*0.85*fl*step(uWater+0.1,Wp.y)*step(uWater+0.2,cp.y);',
       ' vec4 c=projectionMatrix*viewMatrix*vec4(P,1.0);c.z-=c.w*4.0/max(dM*dM,1.0);gl_Position=c;',
       ' gl_PointSize=clamp(aSize*uPix*(70.0/max(dM,1.0)),1.6*uPix,60.0*uPix);}'].join('\n'),
-    fragmentShader:'varying float vA;void main(){vec2 d=gl_PointCoord-0.5;float a=exp(-d.x*d.x*60.0-d.y*d.y*7.0)*vA;if(a<0.003)discard;gl_FragColor=vec4(vec3(1.0,0.7,0.34)*a,a);}',
+    fragmentShader:'varying float vA;void main(){vec2 d=gl_PointCoord-0.5;float a=exp(-d.x*d.x*60.0-d.y*d.y*7.0)*vA;if(a<0.003)discard;gl_FragColor=vec4(vec3(1.0,0.82,0.38)*a,a);}',
     transparent:true,depthWrite:false,depthTest:true,blending:THREE.AdditiveBlending});
   var mirror=new THREE.Points(flGeo,mirrorMat); mirror.frustumCulled=false; scene.add(mirror);
   var lm4=new THREE.Matrix4(), lq=new THREE.Quaternion(), ls=new THREE.Vector3(), lpv=new THREE.Vector3();
-  function releaseAt(i){if(SPECIAL[i])return SPECIAL[i].rel;var r0=B[1],r1=B[4]+0.3*(B[5]-B[4]);return r0+(r1-r0)*Math.sqrt((i+0.5)/LN_N)}
+  function releaseAt(i){if(SPECIAL[i])return SPECIAL[i].relB!=null?B[SPECIAL[i].relB]:SPECIAL[i].rel;var r0=B[1],r1=B[4]+0.3*(B[5]-B[4]);return r0+(r1-r0)*Math.sqrt((i+0.5)/LN_N)}
   function updateLanterns(p,t,amb){
     for(var i=0;i<LN_N;i++){
       var alt=(p-releaseAt(i))*LANT.v[i];
@@ -2098,7 +2102,7 @@ void main(){
   var home=new THREE.Points(homeGeo,homeMat); home.frustumCulled=false; home.renderOrder=6; scene.add(home);
 
   /* ---------- scroll → story ---------- */
-  var secIds=['work','roles','experience','skills','education','contact'];
+  var secIds=['work','roles','skills','experience','education','contact'];
   var B=[0,0.14,0.3,0.46,0.62,0.78,0.92,1];
   function computeBeats(){
     var docH=document.documentElement.scrollHeight, ih=window.innerHeight, range=Math.max(1,docH-ih), prev=0;
@@ -2306,3 +2310,5 @@ void main(){
 })();
 
 </script>
+
+</body></html>
