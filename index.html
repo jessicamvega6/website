@@ -91,6 +91,8 @@ nav ul a:hover{text-decoration:underline;text-underline-offset:4px}
 .hero .lede strong{color:var(--fg);font-weight:600}
 .roles{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:22px;font-size:15.5px;color:var(--muted)}
 .roles span::before{content:"— ";color:var(--accent)}
+.roles .open-label{flex-basis:100%;color:var(--fg);font-weight:600}
+.roles .open-label::before{content:none}
 .contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 20px;border-radius:999px;font-weight:600;font-size:15.5px;
   border:1.5px solid var(--fg);background:transparent;color:var(--fg);cursor:pointer;font-family:var(--body);text-decoration:none;line-height:1.2}
@@ -189,6 +191,7 @@ footer .colophon{font-size:14px;color:var(--muted);margin-top:16px;padding-top:2
     <ul>
       <li><a href="#work">Work</a></li>
       <li><a href="#roles">Looking for</a></li>
+      <li><a href="#ai">AI</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -206,8 +209,9 @@ footer .colophon{font-size:14px;color:var(--muted);margin-top:16px;padding-top:2
       <h1>Jessica<br>Vega</h1>
       <p class="tagline">I build the systems <em>banks run on.</em></p>
       <p class="lede">Ten years of Java, Spring Boot, React and GraphQL in banking, credit cards and insurance. <strong>Tech Lead at Discover Financial Services</strong>, with an M.S. in Software Engineering (AI Engineering).</p>
-      <div class="roles" aria-label="Open to">
-        <span>Open to: Senior Software Engineer</span>
+      <div class="roles">
+        <span class="open-label">Open to:</span>
+        <span>Senior Software Engineer</span>
         <span>AI Engineer</span>
         <span>Product Owner or Product Manager roles</span>
       </div>
@@ -279,6 +283,25 @@ footer .colophon{font-size:14px;color:var(--muted);margin-top:16px;padding-top:2
     <article>
       <h3>Product</h3>
       <p>Much of my current role is product work: facilitating requirements sessions between business units and engineering (95% first-iteration accuracy), writing the technical documentation that cut onboarding from 6 weeks to 3, and mentoring junior developers.</p>
+    </article>
+  </div>
+</section>
+
+<section id="ai" class="sec panel">
+  <header>
+    <p class="label">AI</p>
+    <h2>What I've built with Claude</h2>
+  </header>
+  <div class="body work">
+    <article class="case">
+      <div class="meta"><span>Personal project</span><span>In progress</span><span>AWS · Java · DynamoDB · Terraform</span></div>
+      <h3>BladeBook</h3>
+      <p>A scheduling, lesson-management and payment-reminder app for hockey and ice skating coaches. The backend runs on AWS: a single-table DynamoDB design, Java Lambdas, EventBridge Scheduler and SES for reminders, and Cognito for coach sign-up, with the infrastructure defined in Terraform and the design decisions recorded as architecture decision records.</p>
+    </article>
+    <article class="case">
+      <div class="meta"><span>Personal project</span><span>2026</span><span>Three.js · GLSL · WebGL</span></div>
+      <h3>This website</h3>
+      <p>The scene behind this page: a Cascades lake at dusk, raymarched in a full-screen GLSL shader, with paper sky lanterns rising from the hamlet below as you scroll. Render quality adapts to the device, there's a fallback when WebGL isn't available, and ambient motion can be paused or turned off by the reduced-motion setting.</p>
     </article>
   </div>
 </section>
